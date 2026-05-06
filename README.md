@@ -30,4 +30,5 @@ This project is an AI-powered system that detects crop diseases using deep learn
    http://127.0.0.1:8000
 
 ## ⚠️ Note
-Model file is not uploaded due to size limitations.
+The trained model file (.h5) is not included in this repository due to GitHub size limitations.  
+You can request the model file or add your own trained model in the `backend/models/` directory before running the project.
