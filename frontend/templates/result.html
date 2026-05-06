@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+
+    <!-- Link CSS from static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', path='css/dashboard.css') }}">
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>🌿 Prediction Result</h2>
+
+<!-- RESULT CARDS -->
+
+<div class="result-cards">
+
+<div class="card crop" style="background: yellow; padding:20px; border-radius:12px;">
+<h3>{{ crop }}</h3>
+<p>Crop Selected</p>
+</div>
+
+<div class="card confidence" style="background: yellow; padding:20px; border-radius:12px;">
+<h3>{{ confidence }}%</h3>
+<p>Prediction Confidence</p>
+</div>
+
+<div class="card severity" style="background: yellow; padding:20px; border-radius:12px;">
+<h3>{{ severity }}</h3>
+<p>Severity Level</p>
+</div>
+
+<div class="card category" style="background: yellow; padding:20px; border-radius:12px;">
+<h3>{{ category }}</h3>
+<p>Disease Category</p>
+</div>
+
+</div>
+
+<hr>
+
+<!-- BASIC RESULT -->
+
+<p><b>Status:</b>
+{% if result.status == "Healthy" %}
+<span class="healthy">Healthy</span>
+{% else %}
+<span class="diseased">Diseased</span>
+{% endif %}
+</p>
+
+<p><b>Disease:</b> {{ result.disease }}</p>
+
+<hr>
+
+<!-- SOIL CONDITION -->
+
+<div class="section">
+<div class="section-title">🌱 Soil Condition</div>
+<p>{{ recommendation.soil_condition }}</p>
+</div>
+
+<!-- TREATMENT -->
+
+<div class="section">
+<div class="section-title">💊 Treatment Recommendation</div>
+<p>{{ recommendation.treatment }}</p>
+</div>
+
+<!-- FERTILIZER -->
+
+<div class="section">
+<div class="section-title">🧪 Fertilizer & Soil Improvement</div>
+<p>{{ recommendation.fertilizer }}</p>
+</div>
+
+<!-- NEXT CROP -->
+
+<div class="section">
+<div class="section-title">🌾 Recommended Crops for Next Year</div>
+<p>{{ recommendation.next_crop_recommendation }}</p>
+</div>
+
+<a href="/">🔙 Try another image</a>
+
+</div>
+
+</body>
+</html>

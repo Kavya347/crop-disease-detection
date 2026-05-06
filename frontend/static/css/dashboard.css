@@ -1,0 +1,38 @@
+.card{
+    padding:20px;
+    border-radius:12px;
+    text-align:left;
+    background:yellow;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Crop Selected */
+.crop{
+    background:yellow;
+    border-left:6px solid #2e7d32;
+}
+
+.confidence{
+    background:yellow;
+    border-left:6px solid #1976d2;
+}
+
+.severity{
+    background:yellow;
+    border-left:6px solid #f57c00;
+}
+
+.category{
+    background:yellow;
+    border-left:6px solid #8e24aa;
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:5px;
+}
+
+.card p{
+    color:#555;
+    font-size:14px;
+}
