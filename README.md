@@ -37,9 +37,6 @@ The Crop Disease Detection and Soil-Based Crop Recommendation System is an AI-po
 - NumPy
 - OpenCV
 
-### Database
-- PostgreSQL
-
 ### APIs
 - OpenWeatherMap API
 
