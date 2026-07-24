@@ -145,7 +145,3 @@ To run the project:
 - Update the model path in the configuration if required.
 
 ---
-
-## 📄 License
-
-This project is developed for educational and research purposes.
